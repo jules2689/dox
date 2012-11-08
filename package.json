@@ -6,7 +6,7 @@
   , "keywords": ["documentation", "docs", "markdown", "jsdoc"]
   , "bin": { "dox": "./bin/dox" }
   , "dependencies": {
-      "github-flavored-markdown": ">= 0.0.1"
+      "markdown": ">= 0.2.5"
     , "commander": "0.6.1"
   }
   , "devDependencies": {
