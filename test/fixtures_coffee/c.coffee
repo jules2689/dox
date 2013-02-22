@@ -9,7 +9,7 @@
 # Module dependencies.
 ###
 
-markdown = require('github-flavored-markdown').parse
+markdown = require('marked').parse
 
 ###
 # Library version.
