@@ -161,7 +161,7 @@ module.exports = {
       var comments = dox.parseComments(str);
       comments[0].description.body.should.include('<h2>Some examples</h2>');
       comments[0].description.body.should.not.include('<h2>for example</h2>');
-      comments[0].description.body.should.include('<p>Some longer thing<br />for example:</p>');
+      comments[0].description.body.should.include('<h2>Some longer thing for example</h2>');
       done();
     });
   },
@@ -311,4 +311,12 @@ module.exports = {
       done();
     });
   },
+  'test .api() without inline code in comments': function(done) {
+    fixture('a.js', function(err, str){
+      var comments = dox.parseComments(str);
+      var apiDocs = dox.api(comments);
+      apiDocs.should.equal("  - [exports.version](#exportsversion)\n\n## exports.version\n\n  <p>Library version.</p>\n");
+      done();
+    });
+  }
 };

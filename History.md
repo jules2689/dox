@@ -1,4 +1,21 @@
 
+0.4.2 / 2013-01-18 
+==================
+
+  * Prevent error when using --api & comments have no example code.
+
+0.4.1 / 2012-11-11 
+==================
+
+  * change # to . in --api
+
+0.4.0 / 2012-11-09 
+==================
+
+  * add TOC to --api. Closes #72
+  * add gfm code blocks. Closes #71
+  * remove implicit titles. Closes #70
+
 0.3.3 / 2012-10-16 
 ==================
 
