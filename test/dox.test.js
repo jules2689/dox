@@ -89,7 +89,7 @@ module.exports = {
       mods.description.summary.should.equal('<p>Module dependencies.</p>');
       mods.description.body.should.equal('');
       mods.ignore.should.be.false;
-      mods.code.should.equal('var markdown = require(\'github-flavored-markdown\').parse;');
+      mods.code.should.equal('var markdown = require(\'marked\').parse;');
       mods.ctx.type.should.equal('declaration');
       mods.ctx.name.should.equal('markdown');
       mods.ctx.value.should.equal('require(\'github-flavored-markdown\').parse');

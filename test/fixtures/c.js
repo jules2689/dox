@@ -9,7 +9,7 @@
  * Module dependencies.
  */
 
-var markdown = require('github-flavored-markdown').parse;
+var markdown = require('markdown').parse;
 
 /**
  * Library version.
