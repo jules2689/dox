@@ -9,7 +9,7 @@
 # Module dependencies.
 ###
 
-markdown = require('markdown').parse
+markdown = require('marked').parse
 
 ###
 # Library version.

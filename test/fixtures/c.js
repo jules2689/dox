@@ -9,7 +9,7 @@
  * Module dependencies.
  */
 
-var markdown = require('markdown').parse;
+var markdown = require('marked').parse;
 
 /**
  * Library version.
